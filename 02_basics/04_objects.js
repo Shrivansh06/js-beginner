@@ -41,8 +41,44 @@ const obj6 = {...obj1, ...obj2, ...obj3}
 // console.log(Object.keys(user));
 // console.log(Object.values(user));
 // console.log(Object.entries(user)); // this gives all key: value pairs in separate arrays
-console.log(user.hasOwnProperty('age'));  //this checks wether the given input is present in object or not
+// console.log(user.hasOwnProperty('age'));  //this checks wether the given input is present in object or not
 
 
 const a = Object.entries(user)
 // console.log(a);
+
+
+
+
+// DESTRUCTURING OF AN OBJECT...
+const course = {
+    cousrsename : "java script",
+    price : "999",
+    courseInstructor : "hitesh",
+}
+
+const {courseInstructor : instructor} = course //courseInstructor ko instructor k name se assign krdiya 
+console.log(instructor);
+
+
+// ++++++++++++++++++++++++++++++++++  JSON  ++++++++++++++++++++++++++++++++++++++
+
+// json can be in object....
+{
+    "name" : "shrivansh",
+    "price" : "999",
+    "email" : "xyz@gmail.com"
+} 
+
+// json can be in array form....
+[
+    "name" : "shrivansh",
+    "price" : "999",
+    "email" : "xyz@gmail.com"
+]
+
+[
+    {},
+    {},
+    {},
+]
