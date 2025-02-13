@@ -36,13 +36,47 @@ const result = add(5,6)
 
 function newLogIn (username){
     if (username === undefined){
-        console.log("please enter a valid username");
+        // console.log("please enter a valid username");
         
     }
     return `${username}!! just logged in...`
 }
-console.log(newLogIn());
+// console.log(newLogIn());
 
 // newLogIn () // it will not give any output as return don't print any value 
 const entry = newLogIn()
 // console.log(entry);
+
+
+
+
+function calculatedcartprice (val1, val2, ...num1){  // ... is used as rest operator which collects all the input values and put it into an array
+    return num1
+}
+// console.log(calculatedcartprice(2,4,5,6));
+
+
+// calling an object in a function...
+const user = {
+    username : "aadi",
+    age : 18
+}
+
+function callObject (anotherobject){
+    // console.log(`Username is ${anotherobject.username} and age is ${anotherobject.age}`);
+    
+}
+callObject(user)
+
+
+// Calling any array in a function..
+const myarr =[200,300,400,500]
+
+function newfunc(getarr) {
+    return getarr[2]
+    
+}
+
+// console.log(newfunc(myarr));
+
+
